@@ -1,16 +1,98 @@
-# React + Vite
+# 🛍️ MyShop — React Product Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+MyShop is a responsive product browsing application built with **React**, using the **DummyJSON API** to fetch and display products.
 
-Currently, two official plugins are available:
+The project demonstrates API integration, global state management, reusable components, category filtering, and pagination.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- **Product Catalog** — Browse products with images, titles, prices, ratings, and descriptions.
+- **Category Filtering** — Filter products by category.
+- **Pagination** — Navigate through products with 10 items per page.
+- **Product Details** — Expand or collapse product descriptions using Read More / Read Less.
+- **Loading Indicators** — Display progress indicators while fetching data.
+- **Error Handling** — Display error messages when API requests fail.
+- **Responsive Design** — Optimized layouts for desktop and mobile devices.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technologies Used
 
-## Expanding the Oxlint configuration
+- React
+- JavaScript (ES6+)
+- Vite
+- Axios
+- React Context API
+- Material UI (MUI)
+- Tailwind CSS
+- DummyJSON REST API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 📁 Project Structure
+
+```text
+MyShop/
+├── Components/
+│   ├── CategoryFilter.jsx
+│   ├── Header.jsx
+│   ├── Pagination.jsx
+│   ├── ProductCard.jsx
+│   └── ProductList.jsx
+├── public/
+├── src/
+│   ├── App.jsx
+│   ├── ShopContext.jsx
+│   ├── main.jsx
+│   ├── App.css
+│   └── index.css
+├── package.json
+└── README.md
+```
+
+## ⚙️ Installation and Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/vanda090-spec/MyShop.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd MyShop
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in the terminal.
+
+## 🌐 API
+
+Product data is provided by [DummyJSON](https://dummyjson.com/).
+
+The application uses API endpoints for product retrieval, category filtering, and paginated results.
+
+## 🧠 What I Learned
+
+Through this project, I practiced:
+
+- Managing shared state with React Context.
+- Fetching asynchronous data using Axios.
+- Passing data between components using props.
+- Managing component state with React hooks.
+- Implementing dynamic pagination and category filtering.
+- Handling loading and error states.
+- Building responsive interfaces with Tailwind CSS and Material UI.
+- Using Git and GitHub for version control.
+
+## 👨‍💻 Project Purpose
+
+This project was developed as part of my Full Stack Development studies to strengthen my React development skills and practice working with external REST APIs.
